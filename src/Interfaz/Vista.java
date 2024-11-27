@@ -59,17 +59,17 @@ public class Vista extends JFrame implements Observer {
         
     @Override
     public void paint(Graphics g) {
-        	Graphics2D g2d = (Graphics2D)g;
-        	if (figura != null) {
-                g2d.setColor(colorFigura);
-                g2d.fill(figura);
-            }
+        Graphics2D g2d = (Graphics2D)g;
+        if (figura != null) {
+        	g2d.setColor(colorFigura);
+            g2d.fill(figura);
+        }
         }
         
-        public void Figura(Shape figura, Color colorFigura) {
-            this.figura = figura;
-            this.colorFigura = colorFigura;
-            repaint();
+    public void Figura(Shape figura, Color colorFigura) {
+    	this.figura = figura;
+        this.colorFigura = colorFigura;
+        repaint();
         }
     };
         
@@ -107,7 +107,7 @@ public class Vista extends JFrame implements Observer {
     }
 
     public void dibujarFigura(Shape figura, Color color) {
-        panelFigura.Figura(figura, color);
+    	Figura(figura, color);
     }
 
 	@Override
