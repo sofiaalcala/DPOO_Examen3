@@ -107,7 +107,7 @@ public class Vista extends JFrame implements Observer {
     }
 
     public void dibujarFigura(Shape figura, Color color) {
-    	Figura(figura, color);
+    	panelFigura.Figura(figura, color);
     }
 
 	@Override

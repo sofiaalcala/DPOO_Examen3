@@ -1,5 +1,7 @@
 package Interfaz;
 
+import java.awt.Color;
+
 public class Modelo {
 	private int r;
 	private int g;
